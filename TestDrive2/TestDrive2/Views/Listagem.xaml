@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestDrive2.Views.Listagem"
+             Title="Test Drive">
+
+    <ListView 
+        x:Name="listagemVeiculos" 
+        ItemTapped="listagemVeiculos_ItemTapped"
+        ItemsSource="{Binding Veiculos}"
+        Margin="16">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal">
+                        <Label 
+                            Text="{Binding Nome}" 
+                            FontAttributes="Bold"
+                            TextColor="Blue" 
+                            FontSize="20"
+                            HorizontalOptions="StartAndExpand"
+                            VerticalOptions="Center"/>
+                        <Label 
+                            Text="{Binding Preco}" 
+                            FontAttributes="Italic"
+                            TextColor="Red" 
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="Center"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+</ContentPage>

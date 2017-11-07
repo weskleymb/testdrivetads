@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestDrive2.Views.Detalhe"
+             Title="{Binding Veiculo.Nome}">
+
+    <TableView>
+        <TableRoot>
+            <TableSection Title="Opcionais">
+                <SwitchCell Text="Ar Condicionado" On="True" />
+                <SwitchCell Text="Freio ABS" />
+                <SwitchCell Text="Vidro Elétrico" />
+                <TextCell Text="Valor em R$" />
+            </TableSection>
+        </TableRoot>
+    </TableView>
+
+</ContentPage>
