@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestDrive2.Views.Agendamento"
+             Title="{Binding Veiculo.Nome}">
+
+    <StackLayout Orientation="Vertical">
+        <TableView>
+            <TableRoot>
+                <TableSection Title="Dados Pessoais">
+                    <EntryCell Label="Nome:" Keyboard="Default" />
+                    <EntryCell Label="Fone:" Keyboard="Telephone" />
+                    <EntryCell Label="Email:" Keyboard="Email" />
+                </TableSection>
+                <TableSection Title="Dados do Agendamento">
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Data:" />
+                            <DatePicker />
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Data:" />
+                            <TimePicker />
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
+        <Button Text="Agendar" />
+    </StackLayout>
+    
+</ContentPage>

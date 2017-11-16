@@ -4,15 +4,19 @@
              x:Class="TestDrive2.Views.Detalhe"
              Title="{Binding Veiculo.Nome}">
 
-    <TableView>
-        <TableRoot>
-            <TableSection Title="Opcionais">
-                <SwitchCell Text="Ar Condicionado" On="True" />
-                <SwitchCell Text="Freio ABS" />
-                <SwitchCell Text="Vidro Elétrico" />
-                <TextCell Text="Valor em R$" />
-            </TableSection>
-        </TableRoot>
-    </TableView>
+    <StackLayout Orientation="Vertical">
+        <TableView>
+            <TableRoot>
+                <TableSection Title="Opcionais">
+                    <SwitchCell Text="Ar Condicionado" On="{Binding TemArCondicionado}" />
+                    <SwitchCell Text="Freio ABS" />
+                    <SwitchCell Text="Vidro Elétrico" />
+                    <TextCell Text="{Binding ValorFinal}" />
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
+        <Button Text="Proxima" Clicked="Button_Clicked" />
+    </StackLayout>
 
 </ContentPage>
