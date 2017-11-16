@@ -19,29 +19,24 @@ namespace TestDrive2.Views
             set
             {
                 temArCondicionado = value;
-                DisplayAlert("Teste", "Mudou: " + temArCondicionado, "OK");
-                Veiculo.Preco += 1500;
-                OnPropertyChanged(nameof(temArCondicionado));
+                OnPropertyChanged(nameof(ValorFinal));
             }
         }
 
-        private string valorFinal;
-        public string ValorFinal
+        private decimal valorFinal;
+        public decimal ValorFinal
         {
             get
             {
-                return valorFinal;
-            }
-            set
-            {
-                valorFinal = value;
                 if (temArCondicionado)
                 {
-                    valorFinal = string.Format("Preço total: {0}", Veiculo.Preco + 1500);
-                } else
-                {
-                    valorFinal = string.Format("Preço total: {0}", Veiculo.Preco - 1500);
+                    valorFinal = Veiculo.Preco + 1000;
                 }
+                else
+                {
+                    valorFinal = Veiculo.Preco;
+                }
+                return valorFinal;
             }
         }
 

@@ -8,7 +8,7 @@
         <TableView>
             <TableRoot>
                 <TableSection Title="Opcionais">
-                    <SwitchCell Text="Ar Condicionado" On="{Binding TemArCondicionado}" />
+                    <SwitchCell Text="Ar Condicionado" On="{Binding TemArCondicionado, Mode=TwoWay}" />
                     <SwitchCell Text="Freio ABS" />
                     <SwitchCell Text="Vidro Elétrico" />
                     <TextCell Text="{Binding ValorFinal}" />
