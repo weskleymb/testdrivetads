@@ -46,8 +46,20 @@
     <Compile Include="Views\Detalhe.xaml.cs">
       <DependentUpon>Detalhe.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Editar.xaml.cs">
+      <DependentUpon>Editar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Listagem.xaml.cs">
       <DependentUpon>Listagem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mestre.xaml.cs">
+      <DependentUpon>Mestre.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MestreDetalhe.xaml.cs">
+      <DependentUpon>MestreDetalhe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Perfil.xaml.cs">
+      <DependentUpon>Perfil.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -87,6 +99,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\MestreDetalhe.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Perfil.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Editar.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Mestre.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.5.0.91635\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.5.0.91635\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets')" />

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestDrive2.Views.Editar"
+             Title="Editar">
+    
+    <StackLayout>
+
+        <TableView>
+            <TableRoot>
+                <TableSection Title="Dados Pessoais">
+
+                    <EntryCell Text="João da Silva" />
+                    <EntryCell Text="01/01/1985" />
+                    <EntryCell Text="99999-9999" Keyboard="Telephone" />
+                    <EntryCell Text="joao@gmail.com" Keyboard="Email" />
+
+                </TableSection>
+            </TableRoot>
+        </TableView>
+        
+        <Button Text="Editar" />
+        <Button Text="Salvar" />
+        
+    </StackLayout>
+
+</ContentPage>

@@ -9,7 +9,8 @@ namespace TestDrive2
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Listagem());
+            //MainPage = new NavigationPage(new Listagem());
+            MainPage = new MestreDetalhe();
         }
 
         protected override void OnStart()
